@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white; /* Colore di sfondo */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .register-container {
+            background-color: white; /* Colore di sfondo */
+            border-radius: 16px; /* Raggio del bordo */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra */
+            padding: 40px; /* Spazio interno */
+            width: 300px;
+            text-align: center;
+            border: 2px solid black; /* Colore del bordo */
+        }
+
+        h2 {
+            color: black; /* Colore del testo */
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 12px; /* Spazio inferiore */
+            color: black; /* Colore del testo */
+            font-weight: bold; /* Grassetto */
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 12px);
+            padding: 10px; /* Spazio interno */
+            margin-bottom: 20px; /* Spazio inferiore */
+            border: 1px solid #cccccc; /* Colore del bordo */
+            border-radius: 8px; /* Raggio del bordo */
+            outline: none; /* Nessun contorno */
+        }
+      footer {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: #333333; /* Colore di sfondo */
+          color: white; /* Colore del testo */
+          padding: 10px;
+          text-align: center; /* Centra il testo */
+      }
+
+        button[type="submit"] {
+            background-color: #2ecc71; /* Colore di sfondo */
+            color: white; /* Colore del testo */
+            border: none; /* Nessun bordo */
+            border-radius: 8px; /* Raggio del bordo */
+            padding: 12px 24px; /* Spazio interno */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: inline-block; /* Renderizza il bottone come elemento inline-block */
+        }
+
+        button[type="submit"]:hover {
+            background-color: #27ae60; /* Colore di sfondo al passaggio del mouse */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="register-container">
+        <h2>REGISTRATI</h2>
+        <form action="/registert" method="POST">
+            <label for="username" style="color: black;">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password" style="color: black;">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Registrati</button>
+        </form>
+      <footer>CREATO DA: ERIC CAFA'</footer>
+    </div>
+
+</body>
+
+</html>
